@@ -1,0 +1,223 @@
+
+
+body {
+   height: 100vh;
+    background-image: url("https://yesofcorsa.com/wp-content/uploads/2015/07/2168_pac-man.jpg");
+    justify-content: center;
+    background-size:contain;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+:root{
+    --color-pri: rgb(82,188,250);
+    --color-pri-light: rgba(82,188,250, 0.445);
+    --color-sec: rgb(172,17,233);
+    --color-sec-light: rgb(172,17,233, 0.274);
+   
+    --pc-width:75%;
+    --tab-width: 90%;
+    --phone-width:100%;
+   }
+
+body::before {
+   
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    background: rgb(0,255,255);
+    filter: blur(140px);
+}
+body::after{
+    content: '';
+    position: fixed;
+    top: 200px;
+    left: 250px;
+    height: 200px;
+    width: 200px;
+    background: rgb(183, 0, 255);
+    filter: blur(140px);
+}
+input{
+    color: white;
+    padding: 17px;
+    outline: none;
+    font-size: 30px;
+    border-radius: 25%;
+    cursor: pointer;
+}
+.num{
+    width: 64px;
+    height: 65px;
+    
+}
+.text{
+    width: 160px;
+    height: 26px;
+    border-radius: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 12px;
+    background: rgb(234, 234, 234) !important;
+    cursor:none;
+}
+.text1{
+    width: 24px;
+    height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+ 
+}
+.main{
+    display: flex;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    border-radius: 10px;
+    height: 450px;
+    align-items: flex-end;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.maincolor {
+    background: #FBCA1F;
+    padding: 1.5em 1em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    color: black;
+    margin-bottom: 5px;
+   }
+   
+   .maincolor:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+   .maincolor:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+
+
+
+.blue {
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 1.5em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    color: black;
+   }
+   
+   .blue:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+   .blue:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+
+.wrapper {
+    height: 60px;
+    z-index: 1;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle7124 .5s alternate infinite ease;
+  }
+  
+  @keyframes circle7124 {
+    0% {
+      top: 60px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+  
+    40% {
+      height: 20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+  
+    100% {
+      top: 0%;
+    }
+  }
+  
+  .circle:nth-child(2) {
+    left: 45%;
+    animation-delay: .2s;
+  }
+  
+  .circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+  .shadow {
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow046 .5s alternate infinite ease;
+  }
+  
+  @keyframes shadow046 {
+    0% {
+      transform: scaleX(1.5);
+    }
+  
+    40% {
+      transform: scaleX(1);
+      opacity: .7;
+    }
+  
+    100% {
+      transform: scaleX(.2);
+      opacity: .4;
+    }
+  }
+  
+  .shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+  }
+  
+  .shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+
+
